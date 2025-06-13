@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Food Lover's Restaurant</title>
+</head>
+<body>
+     <nav>
+      <div class="logo">FOOD LOVER'S RESTAURANT</div>
+      <div class="nav-links">
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./booking.html">Booking</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </nav>
+
+   <div class="menu-container">
+    <h1>🍽️ Food Lover's Restaurant</h1>
+    <p>menu</p>
+
+    <h2>Appetizers and Main course</h2>
+    <ul class="menu">
+        <li onclick="openModal('BBQ With sour Sauce and Salad/ Chips', '../Images/menu/1.jpg', 'Choose between chips and salad')">
+          <span class="menu-item-name">BBQ With sour Sauce and Salad/ Chips</span>
+          <span class="menu-item-price">R149.00</span>
+        </li>
+        <li onclick="openModal('Chicken and Mashroom, BBQ and Bacon, Cheese Pizza', '../Images/menu-2/pizza.jpg', 'Small R60, Medium R100, Large R150')">
+          <span class="menu-item-name">Pizza</span>
+          <span class="menu-item-price">R100.50</span>
+        </li>
+        <li onclick="openModal('Chicken Wings', '../Images/menu-2/Chicken.jpg', 'Hot wings available')">
+          <span class="menu-item-name">Chicken Wings</span>
+          <span class="menu-item-price">R120.00</span>
+        </li>
+          <li onclick="openModal('Spaghetti', '../Images/menu-2/spaghetti.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Spaghetti</span>
+          <span class="menu-item-price">R98.99</span>
+        </li>
+          <li onclick="openModal('Burger', '../Images/menu-2/burger.jpg', 'Cheese burger, beef burger and more')">
+          <span class="menu-item-name">Burger</span>
+          <span class="menu-item-price">R139.40</span>
+        </li>
+     </ul>
+
+     <h2>Dessert</h2>
+     <ul class="menu">
+        <li onclick="openModal('Chocolate Cake', '../Images/menu-2/chocolatecake.jpg', '')">
+          <span class="menu-item-name">Chocolate Cake</span>
+          <span class="menu-item-price">R85.00</span>
+        </li>
+        <li onclick="openModal('Vanillla, Cheese cake and Strawberry on top.', '../Images/menu/hybrid-storytellers-w_LV_zQEi5k-unsplash.jpg', 'Vanillla, Cheese cake and Strawberry on top')">
+          <span class="menu-item-name">Vanillla Cake</span>
+          <span class="menu-item-price">R99.99</span>
+        </li>
+        <li onclick="openModal('Waffles', '../Images/menu-2/waffles.jpg', '.')">
+          <span class="menu-item-name">Waffles</span>
+          <span class="menu-item-price">R59.99</span>
+        
+     </ul>
+
+     <h2>Dinks</h2>
+     <ul class="menu">
+        <li onclick="openModal('Coke', '../Images/menu-2/cokee.jpg', 'Different flavors of drinks')">
+          <span class="menu-item-name">Coke</span>
+          <span class="menu-item-price">R29.99</span>
+        </li>
+        <li onclick="openModal('Chocolate Coffee, black TEA, Roobois', '../Images/menu-2/coffee.jpg', 'A slice of cheesy pepperoni pizza.')">
+          <span class="menu-item-name">Coffee</span>
+          <span class="menu-item-price">R50.00</span>
+        </li>
+        <li onclick="openModal('Lemon, Strawberry and vanilla Juice', '../Images/menu/louis-hansel-H7Lti8qa0dE-unsplash.jpg')">
+          <span class="menu-item-name">Lemon, Strawberry and vanilla Juice</span>
+          <span class="menu-item-price">R64.99</span>
+     </ul>
+
+   <div id="popupModal" class="modal">
+     <div class="modal-content">
+       <span class="close-2" onclick="closeModal()">&times;</span>
+       <h2 id="modalTitle"></h2>
+       <img id="modalImage" src="" alt="">
+       <p id="modalText"></p>
+     </div>
+   </div>
+</div>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>About Us</h4>
+      <p>Welcome to Food Lover's Restaurant, where passion meets flavor. Enjoy freshly made dishes crafted with local ingredients.</p>
+    </div>
+
+    <div class="footer-hours">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>Mon–Fri: 07:30 AM – 21:00 PM</li>
+        <li>Sat–Sun: 08:00 AM – 19:00 PM</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Address: Ext 15, 8 Incubation Drive Riverside View, Fourways, Midrand, 2021</p>
+      <p>Phone: (+27) 638 911 073</p>
+      <p>Email:
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXMnpqdxgqwxjJHWvPjrxVxtBKpjslhlNzszPXpTvQnJmwbrQpgRlRrQbMHrcGrQgwfdD">
+            muofhen@thecodingground.com
+        </a>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/login.php/">
+        <img src="../Images/icons/icon-facebook.svg">
+      </a> |
+      <a href="https://instagram.com">
+        <img src="../Images/icons/icon-instagram.svg">
+      </a> |
+      <a href="https://twitter.com">
+        <img src="../Images/icons/icon-twitter.svg">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+  </body>
+  </html>

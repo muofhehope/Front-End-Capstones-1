@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Food Lover's Restaurant</title>
+</head>
+<body>
+   <nav>
+      <div class="logo">FOOD LOVER'S RESTAURANT</div>
+      <div class="nav-links">
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./booking.html">Booking</a>
+        <a href="./contact.html">Contact Us</a>
+    </div>
+  </nav>
+  <section class="services">
+    <div class="wrapper">
+     <h1>Our Restaurant Services</h1>
+     <div class="container">
+        <div class="service-card">
+          <h3>Dine-In</h3>
+          <p>Enjoy delicious meals in a cozy atmosphere with full table service.</p>
+       </div>
+       <div class="service-card">
+         <h3>Online Reservations</h3>
+         <p>Book your table easily online with real-time availability.</p>
+       </div>
+      </div>
+   </div>
+
+<h1>Restaurant Booking</h1>
+
+<form id="bookingForm">
+  <label>Name:</label>
+  <input type="text" id="name" required>
+
+  <label>Email:</label>
+  <input type="email" id="email" required>
+
+  <label>Phone:</label>
+  <input type="tel" id="phone" required>
+
+  <label>Date:</label>
+  <input type="date" id="date" required>
+
+  <label>Time:</label>
+  <input type="time" id="time" required>
+
+  <label>Guests:</label>
+  <select id="guests">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4+">4+</option>
+  </select>
+
+  <button type="submit">Book Now</button>
+</form>
+
+<div class="modal" id="confirmModal">
+  <div class="modal-content">
+    <h3>Confirm Your Booking</h3>
+    <p id="confirmText"></p>
+    <button id="confirmBtn">Confirm</button>
+    <button class="cancel" id="cancelBtn">Cancel</button>
+  </div>
+</div>
+
+<div class="modal" id="finalModal">
+  <div class="modal-content">
+    <h3>Booking Confirmed!</h3>
+    <p>Thank you. Your booking has been made.</p>
+    <button onclick="closeFinalModal()">Close</button>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>About Us</h4>
+      <p>Welcome to Food Lover's Restaurant, where passion meets flavor. Enjoy freshly made dishes crafted with local ingredients.</p>
+    </div>
+
+    <div class="footer-hours">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>Mon–Fri: 07:30 AM – 21:00 PM</li>
+        <li>Sat–Sun: 08:00 AM – 19:00 PM</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Address: Ext 15, 8 Incubation Drive Riverside View, Fourways, Midrand, 2021</p>
+      <p>Phone: (+27) 638 911 073</p>
+      <p>Email:
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXMnpqdxgqwxjJHWvPjrxVxtBKpjslhlNzszPXpTvQnJmwbrQpgRlRrQbMHrcGrQgwfdD">
+            muofhen@thecodingground.com
+        </a>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/login.php/">
+        <img src="../Images/icons/icon-facebook.svg">
+      </a> |
+      <a href="https://instagram.com">
+        <img src="../Images/icons/icon-instagram.svg">
+      </a> |
+      <a href="https://twitter.com">
+        <img src="../Images/icons/icon-twitter.svg">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 All rights reserved.</p>
+  </div>
+</footer>
+       
+
+ <script src="../script.js"></script>
+</body>
+</html>
